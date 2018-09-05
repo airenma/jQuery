@@ -16,13 +16,22 @@ $(document).ready(function(){
     
     $("button").click(zorro);        
     
+    $("#stop").click(function(){
+        $("img").stop();
+    });
+    $("stopall").click(function(){
+        $("img").stop(true, true);
+        
+    });
+    
 });
 </script> 
 </head>
 <body>
 
 <button>Start Animation</button>
-
+<button id="stop">stop</button>
+<button is="stopall">stop all</button>
 <p>By default, all HTML elements have a static position, and cannot be moved. To manipulate the position, remember to first set the CSS position property of the element to relative, fixed, or absolute!</p>
 
    
